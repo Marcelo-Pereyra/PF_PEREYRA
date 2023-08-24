@@ -1,0 +1,82 @@
+@font-face {
+    font-family: "Letra Proyecto";
+    src: url(../recursos/FUENTE/Ubuntu-Bold.ttf);
+
+}
+
+.nav logo{
+
+}
+
+
+ .nav{
+    
+  display: inline;
+  list-style-type: none;
+    top: 0;
+   
+ }
+ .nav ul{
+    
+    flex-wrap: wrap;
+    width: fit-content;
+    margin-top: 5vh;
+    right: 20px;
+ }
+.nav ul li {
+    display: inline;
+   
+    text-decoration: none;
+    display: inline-block;
+    font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+    color: black;
+    margin: 30px;
+   
+   
+   height: 100px;
+   width: 150px;
+font-size: xx-large;
+
+}
+a{
+    display:inline;
+    text-decoration: none;
+    color: black;
+    align-items: center;
+    text-align: center;
+  
+   
+}
+p{
+    
+    font-family: Letra Proyecto;
+    text-align: center;
+}
+.main{
+    justify-content: space-around
+}
+.main img{
+    width: 1000px;
+   align-content: center;
+    padding: 20px;
+    margin: 10vh;
+    image-resolution: 1000px;
+}
+.video iframe {
+   
+    width: 1200px;
+    margin: 10vh;
+}
+.mapa iframe{
+    height:auto;
+    margin: 5vh;
+}
+.main{
+    display: flex;
+    flex-wrap: wrap;
+}
+footer{
+    background-color: black;
+    color: aliceblue;
+    height: 10vh
+}
