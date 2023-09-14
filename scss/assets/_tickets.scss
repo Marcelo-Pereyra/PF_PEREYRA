@@ -1,0 +1,60 @@
+/* Estilo Tickets */
+#Tickets {
+    background-image: url(https://wallpapercave.com/wp/wp9193150.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+    color: rgb(1, 1, 1);
+}
+
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas:
+        "Venta Suscripcion";
+}
+
+.Venta {
+    grid-area: Venta;
+}
+
+.Suscripcion {
+    grid-area: Suscripcion;
+}
+
+#Tickets .container form {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: flex-start;
+    padding: 20px;
+
+    .especial{
+        color: rgb(255, 255, 255);
+        margin-top: 48px;
+    }
+}
+
+#Tickets .container form label {
+    display: inline-block;
+    margin: 20px;
+    font-size: large;
+}
+
+#Tickets input {
+    border-radius: 0.5rem;
+    transition: 0.3s;
+
+    &:hover {
+        font-size: larger;
+    }
+}
+
+#Tickets select {
+    border-radius: 0.5rem;
+
+    &:hover {
+        font-size: larger;
+    }
+}

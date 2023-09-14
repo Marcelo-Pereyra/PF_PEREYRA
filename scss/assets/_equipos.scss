@@ -1,0 +1,28 @@
+/* Estilo Equipos */
+
+#Equipos {
+    background-image:linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
+}
+
+#Equipos h1 {
+    padding-left: 20px;
+    background-color: white;
+}
+
+#Equipos h3 {
+    padding: 20px;
+    text-align: center;
+    margin: auto;
+    max-width: 1200px;
+}
+
+#Equipos img {
+    align-content: center;
+    margin: auto;
+    display: block;
+}
+#Equipos p{
+    flex-wrap: wrap;
+    max-width: 900px;
+   margin: auto;
+}

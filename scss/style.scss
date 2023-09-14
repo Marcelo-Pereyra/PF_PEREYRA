@@ -1,0 +1,52 @@
+@import "./assets/tipografia";
+@import "./assets/animacion";
+
+@import "./assets/reset";
+
+@import "./assets/index";
+
+@import "./assets/hinchadas";
+
+@import "./assets/equipos";
+
+@import "./assets/historia";
+
+@import "./assets/tickets";
+
+@import "./assets/footer";
+
+
+
+
+@import "./assets/mediaquery";
+
+
+
+.navbar-toggler-icon{
+    background-image: url(https://e7.pngegg.com/pngimages/838/545/png-clipart-formula-1-racing-flags-auto-racing-formula-1-flag-racing.png);
+    font-size: larger;
+    &:hover{
+        font-size: 2rem;
+        transition: 0.3s;
+    }
+}
+.nav-link {
+    &:hover{
+        text-decoration:underline;
+        font-size: larger;
+        transition: 0.3s;
+       
+        
+    }
+}
+
+
+
+
+
+
+
+
+
+
+

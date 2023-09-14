@@ -1,0 +1,30 @@
+/* Estilo Historia */
+#Historia {
+
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+    align-items: center;
+    background-image:linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
+}
+
+#Historia h1 {
+    text-align: left;
+    display: inline;
+    background-color: rgb(235, 115, 115);
+    padding: 20px 20px 0px 20px;
+}
+
+#Historia h3 {
+
+    margin: 5px;
+    padding: 20px;
+
+}
+
+#Historia img {
+    width: 300px;
+    align-items: center;
+    margin-left: 20px;
+}

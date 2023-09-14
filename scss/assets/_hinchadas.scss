@@ -1,0 +1,68 @@
+/* Estilo Hinchadas */
+#Hinchadas p {
+    flex-wrap: wrap;
+    text-align: center;
+    margin: auto;
+}
+
+.Ford img {
+    max-width: 40vw;
+    display: block;
+}
+
+.Chevrolet img {
+    max-width: 40vw;
+    display: block;
+}
+
+.Dodge img {
+    max-width: 40vw;
+    display: block;
+}
+
+.Torino img {
+    max-width: 40vw;
+    display: block;
+}
+
+#Hinchadas {
+    background-image:linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
+}
+
+#Hinchadas .grilla {
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-areas:
+        "Ford Chevrolet"
+        "Dodge Torino";
+
+
+}
+
+.Ford {
+    grid-area: Ford;
+}
+
+.Chevrolet {
+    grid-area: Chevrolet;
+}
+
+.Dodge {
+    grid-area: Dodge;
+}
+
+.Torino {
+    grid-area: Torino;
+}
+
+#Hinchadas .grilla h2 {
+    text-align: center;
+}
+
+#Hinchadas .grilla p {
+    width: 500px;
+    flex-wrap: wrap;
+
+
+}

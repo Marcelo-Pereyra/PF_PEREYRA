@@ -1,219 +1,307 @@
-* {
-    margin: 0px;
-    padding: 0px;
+@font-face {
+  font-family: "Letra Proyecto";
+  src: url(../recursos/FUENTE/Ubuntu-Bold.ttf);
+}
+@keyframes titulo {
+  0% {
+    opacity: 0;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+h1 {
+  animation: titulo 2s;
 }
 
-@font-face {
-    font-family: "Letra Proyecto";
-    src: url(../recursos/FUENTE/Ubuntu-Bold.ttf);
-
+* {
+  margin: 0px;
+  padding: 0px;
 }
 
 .main {
-    background-color:rgb(159, 154, 154);
+  background-image: linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
 }
-
-p {
-    flex-wrap: wrap;
-    text-align: center;
-    max-width: 800px;
-    font-family: Letra Proyecto;
-    margin: auto;
-    margin-top: 30px;
+.main h1 {
+  text-align: center;
+  font-size: 5rem;
+  font-style: italic;
 }
-
 .main img {
-    margin: auto;
-    align-content: center;
-    display: flex;
-    flex-wrap: wrap;
+  margin: auto;
+  align-content: center;
+  display: flex;
+  flex-wrap: wrap;
 }
-
-.video iframe {
-
-    width: 1200px;
-    margin: 10vh;
+.main p {
+  flex-wrap: wrap;
+  text-align: center;
+  max-width: 800px;
+  font-family: Letra Proyecto;
+  margin: auto;
+  margin-top: 30px;
 }
-
-.mapa iframe {
-    display: block;
-    height: auto;
-    margin: auto;
-    
+.main iframe {
+  width: 1200px;
+  margin: 10vh;
 }
-
-h2 {
-    margin-top: 30px;
-    margin-left: 40px;
+.main iframe {
+  display: block;
+  height: auto;
+  margin: auto;
 }
-/* Responsive inicio */
-@media (max-width: 900px)
-
-{
-    .video iframe{
-        width: 500px;
-    }
-    .main img{
-        max-width: 600px;
-    }
+.main h2 {
+  margin-top: 30px;
+  margin-left: 40px;
+  text-align: center;
 }
 
 /* Estilo Hinchadas */
-#Hinchadas p{
-    flex-wrap: wrap;
-    text-align: center;
-    margin: auto;
+#Hinchadas p {
+  flex-wrap: wrap;
+  text-align: center;
+  margin: auto;
 }
+
 .Ford img {
-    max-width: 600px;
+  max-width: 40vw;
+  display: block;
 }
 
 .Chevrolet img {
-    max-width: 550px;
-
+  max-width: 40vw;
+  display: block;
 }
 
 .Dodge img {
-    max-width: 600px;
+  max-width: 40vw;
+  display: block;
 }
 
 .Torino img {
-    max-width: 600px;
+  max-width: 40vw;
+  display: block;
 }
 
 #Hinchadas {
-    background-color: rgb(159, 154, 154);
+  background-image: linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
 }
 
-#Hinchadas .container {
-
-    display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas:
-        "Ford Chevrolet"
-        "Dodge Torino";
-
-
+#Hinchadas .grilla {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: "Ford Chevrolet" "Dodge Torino";
 }
 
 .Ford {
-    grid-area: Ford;
+  grid-area: Ford;
 }
 
 .Chevrolet {
-    grid-area: Chevrolet;
+  grid-area: Chevrolet;
 }
 
 .Dodge {
-    grid-area: Dodge;
+  grid-area: Dodge;
 }
 
 .Torino {
-    grid-area: Torino;
+  grid-area: Torino;
 }
 
-#Hinchadas .container h2 {
-    text-align: center;
+#Hinchadas .grilla h2 {
+  text-align: center;
 }
 
-#Hinchadas .container p {
-    width: 500px;
-    flex-wrap: wrap;
-
-
+#Hinchadas .grilla p {
+  width: 500px;
+  flex-wrap: wrap;
 }
 
-/* Responsive Hinchadas */
-@media (max-width: 1400px) {
-    #Hinchadas .container {
-
-        display: grid;
-        grid-template-columns: 1fr;
-        grid-template-areas:
-            "Ford"
-            "Dodge"
-            "Chevrolet"
-            "Torino";
-
-    }
-
-    #Hinchadas .h2 {
-        text-align: left;
-
-    }
-
-    #Hinchadas .img {
-        width: 100vw;
-    }
-}
 /* Estilo Equipos */
-
 #Equipos {
-    background-color: rgb(159, 154, 154);
+  background-image: linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
 }
-#Equipos h1{
-    padding-left: 20px;
-    background-color: white;
+
+#Equipos h1 {
+  padding-left: 20px;
+  background-color: white;
 }
-#Equipos h3{
+
+#Equipos h3 {
   padding: 20px;
-    text-align: center;
+  text-align: center;
   margin: auto;
-    max-width: 1200px;
+  max-width: 1200px;
 }
+
 #Equipos img {
-    align-content: center;
-    margin: auto;
-    display: block;
+  align-content: center;
+  margin: auto;
+  display: block;
 }
-/* Responsive equipos */
-@media (max-width:910px) {
-    #Equipos img{
-        width: 100vw;
-    }
+
+#Equipos p {
+  flex-wrap: wrap;
+  max-width: 900px;
+  margin: auto;
 }
+
 /* Estilo Historia */
 #Historia {
-   
-    flex-direction: column;
-    flex-wrap: wrap;
-    align-content: center;
-    justify-content: center;
-    align-items: center;
-    background-color: rgb(159, 154, 154); 
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: center;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(rgba(6, 250, 250, 0.581), rgb(216, 65, 90));
 }
-#Historia h1{
-    text-align: left;
-    display: inline;
-    background-color: rgb(235, 115, 115);
-    padding: 20px 20px 0px 20px;
-}
-#Historia h3 {
-    
-    margin: 5px;
-    padding: 20px;
-    
-}
-#Historia img{
-    width: 300px;
-    align-items: center;
-    margin-left: 20px;
-}
-/* Responsive Historia */
-@media(max-width: 980px) {
-    #Historia img {
-        flex-wrap: nowrap;
-        width: 200px;
 
-    }
+#Historia h1 {
+  text-align: left;
+  display: inline;
+  background-color: rgb(235, 115, 115);
+  padding: 20px 20px 0px 20px;
+}
+
+#Historia h3 {
+  margin: 5px;
+  padding: 20px;
+}
+
+#Historia img {
+  width: 300px;
+  align-items: center;
+  margin-left: 20px;
+}
+
+/* Estilo Tickets */
+#Tickets {
+  background-image: url(https://wallpapercave.com/wp/wp9193150.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  color: rgb(1, 1, 1);
+}
+
+.container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 1fr;
+  grid-template-areas: "Venta Suscripcion";
+}
+
+.Venta {
+  grid-area: Venta;
+}
+
+.Suscripcion {
+  grid-area: Suscripcion;
+}
+
+#Tickets .container form {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  align-content: flex-start;
+  padding: 20px;
+}
+#Tickets .container form .especial {
+  color: rgb(255, 255, 255);
+  margin-top: 48px;
+}
+
+#Tickets .container form label {
+  display: inline-block;
+  margin: 20px;
+  font-size: large;
+}
+
+#Tickets input {
+  border-radius: 0.5rem;
+  transition: 0.3s;
+}
+#Tickets input:hover {
+  font-size: larger;
+}
+
+#Tickets select {
+  border-radius: 0.5rem;
+}
+#Tickets select:hover {
+  font-size: larger;
 }
 
 .footer {
-    width: auto;
-    flex-wrap: wrap;
-    text-align: center;
-    background-color: rgb(11, 11, 11);
-    color: aliceblue;
-    
-    
+  width: auto;
+  flex-wrap: wrap;
+  text-align: center;
+  background-color: rgb(11, 11, 11);
+  color: aliceblue;
 }
+
+/* Responsive inicio */
+@media (max-width: 900px) {
+  .video iframe {
+    width: 500px;
+  }
+  .main img {
+    max-width: 600px;
+  }
+}
+/* Responsive Hinchadas */
+@media (max-width: 1000px) {
+  #Hinchadas .grilla {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-areas: "Ford" "Dodge" "Chevrolet" "Torino";
+  }
+  #Hinchadas .h2 {
+    text-align: center;
+    flex-wrap: wrap;
+  }
+  #Hinchadas img {
+    margin-left: 30vw;
+  }
+}
+/* Responsive equipos */
+@media (max-width: 910px) {
+  #Equipos img {
+    width: 100vw;
+  }
+}
+/* Responsive Historia */
+@media (max-width: 980px) {
+  #Historia img {
+    flex-wrap: nowrap;
+    width: 200px;
+  }
+}
+/* media query tickets */
+@media (max-width: 900px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+    grid-template-areas: "Venta" "Suscripcion";
+  }
+  .Venta {
+    grid-area: Venta;
+  }
+  .Suscripcion {
+    grid-area: Suscripcion;
+  }
+}
+.navbar-toggler-icon {
+  background-image: url(https://e7.pngegg.com/pngimages/838/545/png-clipart-formula-1-racing-flags-auto-racing-formula-1-flag-racing.png);
+  font-size: larger;
+}
+.navbar-toggler-icon:hover {
+  font-size: 2rem;
+  transition: 0.3s;
+}
+
+.nav-link:hover {
+  text-decoration: underline;
+  font-size: larger;
+  transition: 0.3s;
+}/*# sourceMappingURL=style.css.map */
