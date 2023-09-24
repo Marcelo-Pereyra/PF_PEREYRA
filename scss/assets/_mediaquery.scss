@@ -49,10 +49,11 @@
 }
 
 /* Responsive Historia */
-@media(max-width: 980px) {
+@media(max-width: 1310px) {
     #Historia img {
         flex-wrap: nowrap;
-        width: 200px;
+        max-width: 200px;
+        margin-left: 80px;
 
     }
 }
