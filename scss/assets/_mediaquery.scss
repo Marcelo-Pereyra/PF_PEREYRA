@@ -1,11 +1,17 @@
 /* Responsive inicio */
-@media (max-width: 900px) {
+@media (max-width: 1125px) {
     .video iframe {
         width: 500px;
+        flex-wrap: wrap;
     }
-
+    .mapa iframe {
+        width: 500px;
+        flex-wrap: wrap;
+    }
     .main img {
-        max-width: 600px;
+       
+        max-width: 500px;
+       
     }
 }
 
