@@ -253,11 +253,11 @@ h1 {
     flex-wrap: wrap;
   }
   .video iframe {
-    width: 500px;
+    max-width: 40vw;
     flex-wrap: wrap;
   }
   .mapa iframe {
-    width: 500px;
+    max-width: 40vw;
     flex-wrap: wrap;
   }
   .main img {
